@@ -1,0 +1,13 @@
+@import "../helpers/index";
+
+.card-news {
+  background: #35b2ce;
+  border-radius: 10px;
+  color: #fff;
+
+  &__inner {
+    display: block;
+    min-height: 300px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,89 @@
+@import "../helpers/index";
+
+.blockchain-info {
+  //animation: blockchainShow 1s infinite linear;
+
+  &__inner {
+    display: block;
+    padding: 15px 20px;
+    transition: .3s;
+    background: #1a2429;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      background-color: #222d33;
+    }
+  }
+
+  &__item {
+    display: flex;
+    font-size: 14px;
+
+    @include to_width($screen-sm-down) {
+      flex-wrap: wrap;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 11px;
+
+      @include to_width($screen-sm-down) {
+        padding-bottom: 17px;
+      }
+    }
+
+    &--small {
+      font-size: 12px;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    flex: 1;
+    padding-right: 30px;
+    @include noWrap;
+    max-width: 235px;
+
+    @include to_width($screen-sm-down) {
+      padding-right: 0;
+      flex: none;
+      width: 100%;
+      max-width: 55%;
+    }
+  }
+
+  &__value {
+    margin-left: auto;
+
+    @include to_width($screen-sm-down) {
+      width: 100%;
+      padding-top: 7px;
+    }
+  }
+
+  &__name-id {
+    padding-right: 5px;
+  }
+
+  &__value-id {
+    color: #647882;
+    padding-right: 20px;
+    @include noWrap;
+    flex: 1;
+
+    @include to_width($screen-sm-down) {
+      padding-right: 0;
+    }
+  }
+
+  &__date {
+    color: #647882;
+    margin-left: auto;
+
+    @include to_width($screen-sm-down) {
+      width: 100%;
+      padding-top: 7px;
+      margin-left: 0;
+    }
+  }
+}
