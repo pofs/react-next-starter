@@ -1,0 +1,35 @@
+// Fonts
+$f-main: 'HelveticaNeueCyr',Arial,Helvetica,sans-serif;
+$f-condensed: 'Helvetica Condensed',Arial,Helvetica,sans-serif;
+
+// Variables
+$color-main: #fff;
+$dark-color: #8697a1;
+$hover-color: $dark-color;
+
+//263238
+$bg-main: #3f4045;
+
+$red: #d7446b;
+$yellow: #f4ec68;
+$blue: #00aeef;
+$purple: #823ca6;
+
+$font-size: 14px;
+
+$line-height: 1.35;
+
+
+// Ширины
+$screen-xs-up: 0;
+$screen-sm-up: 480px;
+$screen-md-up: 768px;
+$screen-lg-up: 1024px;
+$screen-xl-up: 1200px;
+$screen-xxl-up: 1440px;
+
+$screen-sm-down: $screen-sm-up - 1px;
+$screen-md-down: $screen-md-up - 1px;
+$screen-lg-down: $screen-lg-up - 1px;
+$screen-xl-down: $screen-xl-up - 1px;
+$screen-xxl-down: $screen-xxl-up - 1px;

@@ -1,8 +1,0 @@
-deploy_to_dev:
-    stage: deploy
-    script:
-        - "cd /home/deploy/htdocs/insolar"
-        - "git pull"
-        - "yarn build"
-    only:
-         - master
