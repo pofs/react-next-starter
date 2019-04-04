@@ -33,3 +33,12 @@ $screen-md-down: $screen-md-up - 1px;
 $screen-lg-down: $screen-lg-up - 1px;
 $screen-xl-down: $screen-xl-up - 1px;
 $screen-xxl-down: $screen-xxl-up - 1px;
+
+
+// use import import variables from '@/assets/stylesheets/helpers/variables.scss'
+// variables.colorMain
+:export {
+  colorMain: $color-main;
+  fMain: $f-main;
+  fCondensed: $f-condensed;
+}
