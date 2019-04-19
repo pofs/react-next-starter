@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Btn extends Component {
-    state = {}
+  state = {}
 
-    render() {
-
-        return ();
-    }
+  render() {
+    return <div />
+  }
 }
 
-export default Btn;
+export default Btn

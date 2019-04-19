@@ -1,29 +1,44 @@
 {
-  "name": "a100",
+  "name": "NAME",
+  "version": "1.0.0",
+  "description": "NAME",
+  "author": "Illia Almaev",
   "scripts": {
-    "dev": "yarn svg-sprite-generate && next",
+    "dev": "yarn svg-sprite-generate && yarn prettier && node server.js",
     "build": "yarn svg-sprite-generate && next build",
-    "start": "next start",
-    "svg-sprite-generate": "svg-sprite-generate -d ./assets/images/svg/ -o ./static/sprite.svg && svgo ./static/sprite.svg"
+    "start": "NODE_ENV=production node server.js",
+    "svg-sprite-generate": "svg-sprite-generate -d ./assets/images/svg/ -o ./static/sprite.svg && svgo ./static/sprite.svg",
+    "prettier":  "prettier --write {pages,components}/**/*.{js,jsx}"
 
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "babel-plugin-inline-react-svg": "^1.0.1",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
+
     "next": "^8.0.3",
     "next-fonts": "^0.17.0",
+
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-slick": "^0.23.2",
-    "styled-components": "^4.2.0"
-  },
-  "devDependencies": {
+
+    "styled-components": "^4.2.0",
     "babel-plugin-styled-components": "^1.10.0",
+
+    "prettier": "1.17.0",
+
+    "babel-plugin-inline-react-svg": "^1.0.1",
     "svg-sprite-generator": "^0.0.7",
     "svg4everybody": "^2.1.9",
-    "svgo": "^1.0.5"
+    "svgo": "^1.0.5",
+
+    "eslint": "^5.12.1",
+    "eslint-plugin-better-styled-components": "^1.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.1"
   }
 }

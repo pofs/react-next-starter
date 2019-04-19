@@ -8,16 +8,13 @@ const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
     <title>{props.title || 'A100'}</title>
-    <meta
-      name="description"
-      content={props.description || defaultDescription}
-    />
+    <meta name="description" content={props.description || defaultDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {/*meta*/}
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#58575b" />
-    <meta name="msapplication-navbutton-color" content="#ffffff"/>
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
 
     {/*favicon*/}
@@ -26,7 +23,7 @@ const Head = props => (
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
     <link rel="manifest" href="/static/site.webmanifest" />
-    <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5"/>
+    <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5" />
 
     {/*OG tags*/}
     <meta property="og:image" content="og-image.jpg" />

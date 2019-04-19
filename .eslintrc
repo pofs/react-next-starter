@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "prettier",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "eslint-config-airbnb-base"
+  ],
+  "rules": {
+    "jsx-quotes": [
+      1,
+      "prefer-double"
+    ],
+    "prettier/prettier": "error",
+    "semi": [
+      2,
+      "never"
+    ],
+    "padded-blocks": 0,
+    "function-paren-newline": 0,
+    "no-buffer-constructor": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ]
+}

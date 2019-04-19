@@ -4,7 +4,7 @@ import Main from '../components/layout/Main'
 
 const Home = () => (
   <Template>
-      <Main/>
+    <Main />
   </Template>
 )
 
